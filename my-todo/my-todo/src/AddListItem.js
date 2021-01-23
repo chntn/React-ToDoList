@@ -238,7 +238,7 @@ export default ExampleComponent
 //                         {/* <button className={AddItemsStyles.AddBtnStyle} onClick={this._addToDoItem.bind(this)}>Add the Task</button> */}  {/*2* you can use class fields to correctly bind callbacks, binding in render method*/} 
                       
 //                         {/* <button className={AddItemsStyles.AddBtnStyle} onClick={(e) => this._addToDoItem(e)}>Add the Task</button>  3* If you aren’t using class fields syntax, you can use an arrow function in the callback:, calling event handler and retruning, arrow function in render method */}
-                        <button className={AddItemsStyles.AddBtnStyle} onClick={this._addToDoItem}>Add the Task</button>  {/*4* class property as Arrwo function */}
+                        // <button className={AddItemsStyles.AddBtnStyle} onClick={this._addToDoItem}>Add the Task</button>  {/*4* class property as Arrwo function */}
 //                     </form>
 
 //                     <button onClick={this.deleteRow()}>Delete Row</button>
