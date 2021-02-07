@@ -7,7 +7,7 @@ class ParentComponenet extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            name: 'Chintan P'
+            name: 'Chintan Parent'
         }
 
         console.log('ParentComponenet constructor');

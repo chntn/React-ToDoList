@@ -7,7 +7,8 @@ function App() {
   return (
     <div className="App">
       {/* <AddListItem/> */}
-      <ExampleComponent></ExampleComponent>
+      
+      <ExampleComponent />
     </div>
   );
 }
