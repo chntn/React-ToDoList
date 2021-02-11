@@ -1,6 +1,6 @@
 
 import React, { Component } from 'react';
-import TableRow from "./TableRow";
+import TableRowItem from "./TableRow";
 
 const HOCComponenet = (WrappedComponent, data, heading) => {
     return class extends Component {
@@ -11,8 +11,6 @@ const HOCComponenet = (WrappedComponent, data, heading) => {
                 data: data,
                 heading: heading
             }
-
-            console.log(this);
         }
 
         // componentDidUpdate(prevProps) {
@@ -22,8 +20,7 @@ const HOCComponenet = (WrappedComponent, data, heading) => {
 
         tableRow = () => {
                     return (this.state.data.map((objectItems, objectKey) => {
-                        return (<TableRow itemObject={objectItems} key={objectKey} ></TableRow>)
-
+                        return (<TableRowItem itemObject={objectItems} key={objectKey} ></TableRowItem>)
                     })
             );
         }

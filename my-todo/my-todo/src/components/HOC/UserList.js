@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
-import TableRow from './TableRow';
+// import TableRow from './TableRow';
 
 class UserList extends Component {
 
-    constructor(props, context) {
-        super(props, context);
+    constructor(props) {
+        super(props);
 
         // this.state = {
         //     userListArray: [
@@ -13,7 +13,6 @@ class UserList extends Component {
         //         { "id": 3, "name": "Ranjit", "type": "User" },
         //     ]
         // }
-        console.log(this.props);
     }
 
 

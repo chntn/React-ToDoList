@@ -1,11 +1,10 @@
 import React, { Component } from "react";
-import TableRow from "./TableRow";
+// import TableRow from "./TableRow";
 
 class EmployeeList extends  Component {
 
     constructor (props){
         super(props);
-
 
         // this.state = {
         //     employeeList :[
@@ -18,12 +17,10 @@ class EmployeeList extends  Component {
 
 
     render() {
-
-        // console.log(this.state.employeeList);
         return (
 
             <div>
-                 {this.props.heading}
+                {this.props.heading}
                 <table style={{margin: "0 auto", border: "1px solid"}}>
                 <thead>
                     <tr>
