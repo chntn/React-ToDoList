@@ -35,6 +35,10 @@ class ChildComponenet extends Component {
         console.log("ChildComponenet componentDidUpdate");
     }
 
+    componentWillUnmount(){
+        console.log("ChildComponenet componentWillUnmount");
+    }
+
     render() {
 
         console.log('ChildComponenet render');

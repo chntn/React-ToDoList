@@ -36,6 +36,14 @@ class ParentComponenet extends React.Component {
         console.log("ParentComponenet componentDidUpdate");
     }
 
+    componentWillUnmount(){
+        
+
+        document.removeEventListener("click", this.changeState);
+        console.log("ParentComponenet componentWillUnmount");
+    }
+
+
     changeState = () => {
         this.setState({
             name: 'Chintan Change P'

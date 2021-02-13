@@ -1,5 +1,5 @@
 
-import React, { Component } from 'react';
+import React, { Component, } from 'react';
 import TableRowItem from "./TableRow";
 
 const HOCComponenet = (WrappedComponent, data, heading) => {
