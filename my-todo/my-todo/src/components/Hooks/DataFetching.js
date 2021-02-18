@@ -8,12 +8,43 @@ function DataFetching() {
 
     useEffect(() => {
 
-        fetch(`https://jsonplaceholder.typicode.com/posts/${idFromButtonClick}`)
-            .then(response => response.json())
+        const f1 = fetch('https://jsonplaceholder.typicode.com/posts');
+        const f2 = fetch('https://ghibliapi.herokuapp.com/people');
+
+        // Promise.all([f1, f2]).then(([res1, res2]) => {
+        //     console.log('Results', res1, res2)
+        //   })
+        // Promise.all([f1, f2])
+        //     .then(res => {
+        //         // console.log('Array of results', res)
+        //     })
+        //     .catch(err => {
+        //         console.error(err)
+        //     })
+
+    const fetchPromiseAll =  Promise.all([f1, f2]).then(([res1, res2]) => {
+            console.log('Results', res1, res2)
+        });
+
+        console.log(fetchPromiseAll);
+       const check =  fetchPromiseAll.then(response => response);
+        console.log(check);
+
+        const fetchPromise = fetch(`https://jsonplaceholder.typicode.com/posts/${idFromButtonClick}`)
+
+        console.log(fetchPromise);
+
+        fetchPromise.then(response => response.json())
             .then(data => {
-                console.log(data);
-                setPost(data)
-             })
+                // console.log(data);
+                //     setPost(data)
+            })
+
+        // .then(response => response.json())
+        // .then(data => {
+        //     console.log(data);
+        //     setPost(data)
+        //  })
 
 
         // .get(`https://jsonplaceholder.typicode.com/posts/${id}`)
@@ -24,7 +55,7 @@ function DataFetching() {
         //     .catch(err => {
         //         console.log(err)
         //     })
-    },[idFromButtonClick])
+    }, [idFromButtonClick])
 
     const handleClick = () => {
         setIdFromButtonClick(id)
