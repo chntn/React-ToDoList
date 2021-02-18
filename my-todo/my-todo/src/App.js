@@ -11,7 +11,7 @@ import React, { useState, useEffect } from 'react';
 // import HookCounterTwo from './components/Hooks/useStateTwo';
 // import IntervalClassCounter from './components/Hooks/useStateThree';
 // import ParentComponenet from './components/ParentComponent';
-// import DataFetching from './components/Hooks/DataFetching';
+import DataFetching from './components/Hooks/DataFetching';
 
 import ComponentC from "./components/Context/ComponentC";
 
@@ -74,13 +74,13 @@ function App() {
       {/* <ExampleComponent /> */}
 
       {/* <ParentComponenet></ParentComponenet> */}
-      {/* <DataFetching></DataFetching> */}
+      <DataFetching></DataFetching>
 
-      <UserContext.Provider value={"Chintan"}>
+      {/* <UserContext.Provider value={"Chintan"}>
         <LastNameContext.Provider value={"Upadhayay"}>
           <ComponentC />
         </LastNameContext.Provider>
-      </UserContext.Provider>
+      </UserContext.Provider> */}
     </div>
   );
 }
